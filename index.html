@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            background-color: bisque;
+            width: 100%;
+            position: fixed;
+            right: 0;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+            gap: 30px;
+            padding-right: 2%;
+        }
+         a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.2em;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 550;
+            letter-spacing: 2px;
+        }
+        .text{
+            background-image: url(br.jpg);
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text span{
+            background-color: rgb(103, 102, 102);
+            font-size: 1em;
+            padding: 10px;
+        }
+        .text p{
+            font-size: 3em;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 3px;
+        }
+        .image1{
+            background-image: url(house1.jpg);
+            width: 15%;
+            
+            background-size: contain;
+            background-repeat: no-repeat;
+            flex-basis: 20%;
+          
+        }
+        .image2{
+            background-image: url(house2.jpg);
+            width: 15%;
+            
+          
+            background-size: contain;
+            background-repeat: no-repeat;
+          flex-basis: 20%;
+            
+        }
+        .image3{
+            background-image:url(house3.jpg) ;
+            width: 15%;
+            background-size: contain;
+            background-repeat: no-repeat;
+          flex-basis: 20%;
+           
+        }
+        .image4{
+            background-image: url(house4.jpg);
+            width: 15%;
+            
+            background-size: contain;
+            background-repeat: no-repeat;
+            flex-basis: 20%;
+           
+        }
+        .image{
+            display: flex;
+            width: 100vw;
+            height: 40vh;
+            justify-content: space-evenly;
+        }
+        span{
+            background-color: black;
+            color: white;
+        }
+        
+
+    @media screen and (width<426px){
+        .container{
+            flex-direction: column;
+            align-items: center;
+        }
+        .image{
+            flex-direction: column;
+          
+        }
+        .image{
+            height:200vh;
+            width: 100vw;
+            margin-left: 10%;
+        }
+        .image1,.image2,.image3,.image4{
+            width: 100%;
+            height:40vh;
+            
+            background-size: contain;
+            background-repeat: no-repeat;
+            flex-basis: 20%;
+          
+        }
+        a{
+          
+            font-size: 1em;
+           
+        }
+        .text p{
+            font-size: 1em;
+            color: rgb(15, 13, 13);
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 3px;
+      
+    }
+    .text {
+        width: 110vw;
+        height: 100vh;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#">BR Architects</a>
+        <ul class="list">
+            <li><a href="#">Projects</a> </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+<div class="text">
+    <p><span>BR</span> Architects</p>
+</div>
+<div class="projects">
+    <h4>Projects</h4>
+    <div class="image">
+        <div class="image1"><span>Summer House</span></div>
+        <div class="image2"><span>Brick House</span></div>
+        <div class="image3"><span>Renovated</span></div>
+        <div class="image4"><span>Barn House</span></div>
+    </div>
+    <div class="image">
+        <div class="image1"><span>Summer House</span></div>
+        <div class="image2"><span>Brick House</span></div>
+        <div class="image3"><span>Renovated</span></div>
+        <div class="image4"><span>Barn House</span></div>
+    </div>
+    
+</body>
+</html>
